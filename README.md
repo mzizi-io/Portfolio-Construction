@@ -11,3 +11,13 @@ This project aims to provide the following functions and modules:
 - Expected returns estimates techniques
 - Allocation strategies and techniques
 
+## Features
+- Statistics and performance
+  - Annualized volatility
+  - Annualized return
+  - Sharpe ratio
+  - Maximum drawdown 
+  - Value at Risk: Gaussian / historic / Cornish-Fisher VaR
+  - Conditional Value at Risk (CVaR) or Expected Shortfall
+ 
+ - Optimization techniques
