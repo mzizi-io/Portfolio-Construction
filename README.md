@@ -5,8 +5,8 @@ The other reason is because of my ability to learn better and quicker by doing. 
 
 ## Contents
 This project aims to provide the following functions and modules: 
-- Portfolio statistics and performance computation 
-- Portfolio optimization techniques
+- Statistics and performance computation 
+- Optimization techniques
 - Risk estimates techniques (covariance estimates)
 - Expected returns estimates techniques
 - Allocation strategies and techniques
