@@ -4,5 +4,10 @@ This repository is dedicated to a progressive implementation and maintenance of 
 The other reason is because of my ability to learn better and quicker by doing. This notebook will allow me to implement, save and test (understand backtest here) these optimization and allocation techniques. Please, be aware that I am still learning and feel free to make some constructive comments.  
 
 ## Contents
-- dfjsfs
-- ddfsqfqf
+This project aims to provide the following functions and modules: 
+- Portfolio statistics and performance computation 
+- Portfolio optimization techniques
+- Risk estimates techniques (covariance estimates)
+- Expected returns estimates techniques
+- Allocation strategies and techniques
+
