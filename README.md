@@ -5,18 +5,12 @@ The other reason is because of my ability to learn better and quicker by doing. 
 
 ## Contents
 This project aims to cover the following aspects / areas: 
-- Portfolio statistics and performance computation 
-- Portfolio optimization techniques
+- Portfolio performance and risk indicators 
+- Portfolio optimization techniques and methods
 - Asset allocation strategies
 
 ## Features
-- Statistics and performance
-  - Annualized volatility
-  - Annualized return
-  - Sharpe ratio
-  - Maximum drawdown 
-  - Value at Risk: Gaussian / historic / Cornish-Fisher VaR
-  - Conditional Value at Risk (CVaR) or Expected Shortfall
+- Portfolio performance and risk indicators which goes from \textit{annaualized portfolio return and volatility, sharpe ratio} to \textit{maximum drawdown, VaR, CVaR etc...} 
  
 - Classical optimization techniques
   - Efficient risk
