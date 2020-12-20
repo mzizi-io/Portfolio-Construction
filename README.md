@@ -30,3 +30,5 @@ This project is ongoing and there is still a lot to do in order to cover all asp
 - Allocation strategies and techniques (CPPI, LDI...)
 - Custom portfolio optimization
 
+## Disclaimer 
+Nothing about this project constitues investment advice, and the author bears no responsibiltiy for your subsequent investment decisions.
