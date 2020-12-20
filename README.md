@@ -32,4 +32,4 @@ This project is ongoing and there is still a lot to do in order to cover all asp
 - Custom portfolio optimization
 
 ## Disclaimer 
-Nothing about this project constitues investment advice, and the author bears no responsibiltiy for your subsequent investment decisions.
+Nothing about this project constitues an investment advice. The author bears no responsibiltiy for your subsequent investment decisions.
