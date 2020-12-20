@@ -10,13 +10,13 @@ This project aims to cover the following aspects / areas:
 - Asset allocation strategies
 
 ## Features
-- Portfolio performance and risk indicators which goes from \textit{annaualized portfolio return and volatility, sharpe ratio} to \textit{maximum drawdown, VaR, CVaR etc...} 
+- Portfolio performance and risk indicators which goes from *annaualized portfolio return and volatility, sharpe ratio* to *maximum drawdown, VaR, CVaR etc...*
  
-- Classical optimization techniques
-  - Efficient risk
-  - Global minimum variance 
-  - Maximum sharpe ratio portfolio
-  - Equally-weighted portfolio
+- Classical portfolio optimization techniques
+  - **Efficient risk** : hfshglsmhgslhgsm vshmshgshgmlssgjslgs
+  - **Global minimum variance**
+  - **Maximum sharpe ratio portfolio**
+  - **Equally-weighted portfolio**
  
 ## To do / Improvement
 This project is ongoing and there is still a lot to do in order to cover all aspects of portfolio management. Hereafter, some ideas / techniques and methods I will implement very soon: 
