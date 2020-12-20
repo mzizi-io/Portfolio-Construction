@@ -18,13 +18,13 @@ This project aims to cover the following aspects / areas:
   - Value at Risk: Gaussian / historic / Cornish-Fisher VaR
   - Conditional Value at Risk (CVaR) or Expected Shortfall
  
- - Classical optimization techniques
+- Classical optimization techniques
   - Efficient risk
   - Global minimum variance 
   - Maximum sharpe ratio portfolio
-  - Equally weighted portfolio
+  - Equally-weighted portfolio
  
-## To do / Improvement area
+## To do / Improvement
 This project is ongoing and there is still a lot to do in order to cover all aspects of portfolio management. Hereafter, some ideas / techniques and methods I will implement very soon: 
 - Risk estimates techniques (covariance estimates)
 - Expected returns estimates techniques
