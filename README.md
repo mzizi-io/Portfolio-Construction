@@ -6,10 +6,7 @@ The other reason is because of my ability to learn better and quicker by doing. 
 ## Contents
 This project aims to provide the following functions and modules: 
 - Statistics and performance computation 
-- Optimization techniques
-- Risk estimates techniques (covariance estimates)
-- Expected returns estimates techniques
-- Allocation strategies and techniques
+- Classical optimization techniques
 
 ## Features
 - Statistics and performance
@@ -20,4 +17,16 @@ This project aims to provide the following functions and modules:
   - Value at Risk: Gaussian / historic / Cornish-Fisher VaR
   - Conditional Value at Risk (CVaR) or Expected Shortfall
  
- - Optimization techniques
+ - Classical optimization techniques
+  - Efficient risk
+  - Global minimum variance 
+  - Maximum sharpe ratio portfolio
+  - Equally weighted portfolio
+ 
+## To do / Improvement area
+This project is ongoing and there is still a lot to do in order to cover all aspects of portfolio management. Hereafter, some ideas / techniques and methods I will implement very soon: 
+- Risk estimates techniques (covariance estimates)
+- Expected returns estimates techniques
+- Allocation strategies and techniques (CPPI, LDI...)
+- Custom portfolio optimization
+
