@@ -13,7 +13,8 @@ This project aims to cover the following aspects / areas:
 - Portfolio performance and risk indicators which goes from *annaualized portfolio return and volatility, sharpe ratio* to *maximum drawdown, VaR, CVaR etc...*
  
 - Classical portfolio optimization techniques
-  - **Efficient risk** : hfshglsmhgslhgsm vshmshgshgmlssgjslgs
+  - **Efficient risk portfolio**
+    This is the portfolio that gives you the optimal volatility/risk exposure given a targeted return.  
   - **Global minimum variance**
   - **Maximum sharpe ratio portfolio**
   - **Equally-weighted portfolio**
