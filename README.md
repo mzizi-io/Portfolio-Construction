@@ -14,7 +14,7 @@ This project aims to cover the following aspects / areas:
  
 - Classical portfolio optimization techniques
   - **Efficient risk portfolio**
-    This is the portfolio that gives you the optimal volatility/risk exposure given a targeted return.  
+    This is the portfolio that gives you the optimal volatility/risk exposure given a targeted return. It derives from Harry Markowitz works and findings on portfolio management theory. Also called mean_variane optimization, the idea is based on the mathematical existence of an optimal portfolio which offer the best risk-retutn couple. According to the returns of the portfolio components or assets, one can compute the optimal weights in order to build a portfolio with the best risk profile. Although, the model sounds theoretically good, there is some shortcomings such as the lack of robustness that make it less efficient in practice.
   - **Global minimum variance**
   - **Maximum sharpe ratio portfolio**
   - **Equally-weighted portfolio**
