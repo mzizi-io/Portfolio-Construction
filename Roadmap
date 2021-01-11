@@ -1,0 +1,29 @@
+--> Préparer les data etfs pour le cookbook
+	1. Trouver comment importer de Yfinance sous jupyter
+	2. Sélectionner les etfs 
+
+ETFs tickers list
+  - LQQ.PA : Lyxor Nasdaq-100 Daily (2x) Leveraged UCITS ETF Acc -- 21 sept 2007
+  - HLT.PA: Lyxor Index Fund - Lyxor Stoxx Europe 600 Healthcare UCITS ETF Acc -- 18 juin 2012
+  - FOO.PA: Lyxor Index Fund - Lyxor Stoxx Europe 600 Food & Beverage UCITS ETF Acc -- 28/08/2006
+  - MVAU.PA: Lyxor FTSE USA Minimum Variance UCITS ETF -- 26 juin 2015
+  - AWAT.PA: Lyxor PEA Eau (World Water) UCITS ETF Capi -- 13 mai 2014
+
+--> Cookbook
+	1. Clean data
+	2. Create portfolio of returns 
+	3. Calculer la matrice de Variance cov
+	4. Compute the annualized return of each etf in the potfolio
+	5. Get the min return and the max return 
+	6. Get the optimal wieghts
+	7. Compute portfolio return and portfolio vol for each set of weights
+	8. PLot the efficient frontier and show the different portfolio opt strat
+	
+	Additional (For predictive goal and portfolio allocation)
+	9. Show the lack of robustess of the markowitz optimal portfolio in practice by comparing 
+	two efficient frontier based on slightly different estimates of assets returns
+
+Data Available on Yahoo finance + tickers 
+
+
+--> Ipython limits of diversification in a middle of global market and economy crisis
