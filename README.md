@@ -1,7 +1,9 @@
 ## Introduction
-This repository is dedicated to a progressive implementation and maintenance of various and state-to-the art techniques related to investment management decisions, portfolio construction and allocation techniques. Firstly, my interest in building these modules came from my desire to have a better risk management of the portfolio of ETFs (Trackers or Exchange-Traded Funds) that I set up to dynamise and better manage my personal savings. To do so, I did some research on the matter and finally decided to put the useful stuffs that I found here. 
+This repository is dedicated to the progressive implementation and maintenance of various and state-to-the art techniques related to investment management decisions, portfolio construction and allocation techniques. First of all, my interest in building these modules came from my desire to have a better risk management of the portfolio of ETFs (Trackers or Exchange-Traded Funds) that I set up to boost and better manage my personal savings. To do so, I did some research on the matter and finally decided to put here the useful elements that I found. 
 
-The other reason is because of my ability to learn better and quicker by doing. This notebook will allow me to implement, save and test (understand backtest here) these optimization and allocation techniques. Please, be aware that I am still learning and feel free to make some constructive comments.  
+The other reason is my ability to learn better and faster through practice. This notebook will allow me to implement, save and test (understand backtest here) these optimization and allocation techniques. 
+
+Please, be aware that I am still learning and do not hesitate to make constructive comments.  
 
 ## Contents
 This project aims to cover the following aspects / areas: 
