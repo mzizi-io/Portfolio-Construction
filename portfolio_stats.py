@@ -8,34 +8,7 @@ import numpy as np
 import pandas as pd
 import scipy.stats as scp
 from math import *
-        
-def get_clean_data(data, components= "returns", period="monthly"): 
-	"""
-	This returns data depending on the type of the inputs (prices or returns) and gets the period per year 
-	of the portfolio input data. It outputs the portfolio data with the right format. 
-	:components_types (str) <-- {prices, returns}.
-	:period (str) <-- {daily, monthly, quaterly}.
-	""" 
-	if period == "monthly": 
-		period_per_year = 12
-	elif period == "daily": 
-		period_per_year = 252
-	elif period == 'quaterly':
-		period_per_year = 4
-	else: 
-		raise NotImplementedError("Expected period to be 'daily', 'monthly' or 'quaterly'")
-		
-	if components == 'returns': 
-		data = data
-	elif components == 'prices': 
-		data = data.pct_change(axis=0)
-		data = data.dropna(axis=0)  
-	else: 
-		raise NotImplementedError("Expected components to be prices or returns data")
-		
-	return period_per_year, data
-            
-    
+                      
 def annualized_volatility(returns_data, period_per_year):
     """
     This function computes the annualized volatility of the portfolio returns.  
@@ -138,7 +111,7 @@ def historic_CVaR(returns_data, level=5):
 		return returns_data.aggregate(historic_CVaR, level = level)
 	elif isinstance(returns_data, pd.Series):
 		beyond_VaR = returns_data[returns_data<=-np.percentile(returns_data, level)]
-		return beyond_VaR.mean()
+		return -beyond_VaR.mean()
 
 def summary_stats(returns_data, period_per_year, risk_free_rate=0.04, VaR_method="modified", VaR_level=5): 
     """
@@ -163,8 +136,8 @@ def summary_stats(returns_data, period_per_year, risk_free_rate=0.04, VaR_method
     CVaR = returns_data.aggregate(historic_CVaR, level = VaR_level)
     maxD = maxDrawdown(returns_data, plot=False, style=None, legend=None, title=None, figsize=None)
     
-    return pd.DataFrame({'Annualized volatility': ann_vol,
-                        'Annualized return': ann_return,
+    return pd.DataFrame({'Annualized return': ann_return,
+                        'Annualized volatility': ann_vol,
                         'Sharpe_ratio': sr, 
                         'VaR 5%': VaR,
                         'CVaR 5%': CVaR,

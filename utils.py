@@ -1,9 +1,13 @@
 #######################################################################
-# Useful functions for data processings and transformations
+# Useful functions for data processings, transformations and plotting
 #######################################################################
 
 import numpy as np
 import pandas as pd
+import chart_studio.plotly as py
+import plotly.express as px
+import plotly.graph_objects as go
+from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
 
 def import_data(paths, tickers):
     """
@@ -14,8 +18,8 @@ def import_data(paths, tickers):
     data = []
     for i in range(len(paths)): 
         etf_data = pd.read_csv(paths[i], sep=';', header=0, names=['DateTime', tickers[i]], index_col='DateTime',
-							   parse_dates=True).replace(to_replace=',',value = '.', regex=True).astype(float)
-        etf_data.index = pd.to_datetime(etf_data.index)
+							   parse_dates=False).replace(to_replace=',',value = '.', regex=True).astype(float)
+        etf_data.index = pd.to_datetime(etf_data.index, format="%d/%m/%Y")
         data = data + [etf_data]    
     return pd.concat(data, axis=1)
 
@@ -45,3 +49,21 @@ def get_clean_data(data, components= "returns", period="monthly"):
 		raise NotImplementedError("Expected components to be prices or returns data")
 		
 	return period_per_year, data
+
+
+def plot_risk_estimates_heatmap(correlation_matrix, colorscale): 
+	"""
+	This function returns the risk estimates matrice heatmap. 
+	:correlation_matrix (pd.DataFrame)
+	:colorscale (str)
+	"""
+	correlation_matrix = pd.DataFrame(data=correlation_matrix.values, index=correlation_matrix.index.astype('str'), 
+									  columns=correlation_matrix.columns)
+
+	return correlation_matrix.iplot(kind='heatmap', colorscale=colorscale )
+	
+# def plot_weights_pie(): 
+# 	"""
+	
+# 	"""
+	
