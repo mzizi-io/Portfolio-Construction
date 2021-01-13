@@ -3,7 +3,7 @@ This repository is dedicated to the progressive implementation and maintenance o
 
 The other reason is my ability to learn better and faster through practice. This notebook will allow me to implement, save and test (understand backtest here) these optimization and allocation techniques. 
 
-Please, be aware that I am still learning and do not hesitate to make constructive comments.  
+Please, know that I am still learning and do not hesitate to make constructive comments.  
 
 ## Contents
 This project aims to cover the following aspects / areas: 
