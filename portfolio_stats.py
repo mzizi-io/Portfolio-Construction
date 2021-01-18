@@ -1,5 +1,5 @@
 ###########################################
-#TO ADD
+#TO DO
 # Probabilistic Sharpe ratio 
 # Deflated Sharpe ratio
 ###########################################
