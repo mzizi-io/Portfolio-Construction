@@ -1,5 +1,9 @@
 #######################################################################
 # Useful functions for data processings, transformations and plotting
+#----------------------------------------------------------------------
+#TO DO
+#-----
+#- Treemap
 #######################################################################
 
 import numpy as np
@@ -51,19 +55,44 @@ def get_clean_data(data, components= "returns", period="monthly"):
 	return period_per_year, data
 
 
-def plot_risk_estimates_heatmap(correlation_matrix, colorscale): 
+def plot_risk_estimates_heatmap(correlation_matrix, colorscale, showscale, title): 
 	"""
 	This function returns the risk estimates matrice heatmap. 
 	:correlation_matrix (pd.DataFrame)
 	:colorscale (str)
+	:showscale (bool)
+	:title (str)
 	"""
-	correlation_matrix = pd.DataFrame(data=correlation_matrix.values, index=correlation_matrix.index.astype('str'), 
-									  columns=correlation_matrix.columns)
+	trace = go.Heatmap(z=correlation_matrix.values,
+                   x=correlation_matrix.index,
+                   y=correlation_matrix.columns,
+                   colorscale=colorscale,
+                   showscale=showscale)
+	
+	layout = dict(xaxis_showticklabels=True, 
+              yaxis_showticklabels=True, 
+             title='Risk estimates correlation heatmap')
+	
+	fig=go.Figure(data=trace, layout=layout)
+	
+	return fig.show()
 
-	return correlation_matrix.iplot(kind='heatmap', colorscale=colorscale )
+
+def plot_weights_pie_chart(weights, title, hole, hoverinfo, textinfo, textfont_size, textfont_color, marker_colors): 
+	"""
+	This function returns a pie chart of the optimal weights for portfolio allocation. 
+	:weights (OrderedDict)
+	:title (str)
+	:hole (float)
+	hoverinfo (str)
+	textinfo (str)
+	textfont_size (int)
+	"""
+	trace = go.Pie(labels=list(weights.keys()), values=list(weights.values()), insidetextorientation='radial')
 	
-# def plot_weights_pie(): 
-# 	"""
-	
-# 	"""
-	
+	fig=go.Figure(data=trace)
+	fig.update_traces(hoverinfo=hoverinfo, hole=hole, textinfo=textinfo, marker=dict(colors=marker_colors),
+				  textfont_size=textfont_size, textfont_color=textfont_color)
+	fig.update_layout(dict(title=title))
+
+	return fig.show()
