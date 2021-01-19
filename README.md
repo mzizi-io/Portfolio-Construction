@@ -1,6 +1,6 @@
 ## Introduction
 Here is a link of a cookbook which tests and shows how to use the python functions and modules which are curently implemented : 
-\href{https://nbviewer.jupyter.org/github/Olaymka/Portfolio-Construction/blob/main/cookbook.ipynb#}
+https://nbviewer.jupyter.org/github/Olaymka/Portfolio-Construction/blob/main/cookbook.ipynb#
 
 This repository is dedicated to the progressive implementation and maintenance of various and state-to-the art techniques related to investment management decisions, portfolio construction and allocation techniques. First of all, my interest in building these modules came from my desire to have a better risk management of the portfolio of ETFs (Trackers or Exchange-Traded Funds) that I set up to boost and better manage my personal savings. To do so, I did some research on the matter and finally decided to put here the useful elements that I found. 
 
